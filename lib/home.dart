@@ -124,8 +124,8 @@ class _HomeState extends State<Home> {
                     minWidth: 40,
                     onPressed: (){
                       setState(() {
-                        currentScreen = Chat();
-                        currentTab=1;
+                        currentScreen = Setting();
+                        currentTab=3;
                       });
                     },
                     child:Column(
@@ -133,11 +133,11 @@ class _HomeState extends State<Home> {
                       children: [
                         Icon(
                           Icons.chat,
-                          color: currentTab == 1? Colors.blue: Colors.grey,
+                          color: currentTab == 3? Colors.blue: Colors.grey,
                         ),
                         Text(
-                          'Chat',
-                          style: TextStyle(color: currentTab == 1? Colors.blue: Colors.grey),
+                          'Setting',
+                          style: TextStyle(color: currentTab == 3? Colors.blue: Colors.grey),
                         )
                       ],
                     )
